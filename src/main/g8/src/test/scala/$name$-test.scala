@@ -1,17 +1,14 @@
 import org.scalatest.FlatSpec
 
-class SetSpec extends FlatSpec {
+class SmfsbSpec extends FlatSpec {
 
-  import scalaglm.Utils.backSolve
-  import breeze.linalg._
+  "Step.gillespie" should "create and step LV model" in {
+    val model = SpnModels.lv[IntState]()
+    val step = Step.gillespie(model)
+    val output = step(DenseVector(50, 100), 0.0, 1.0)
+    assert(output.length === 2)
+  } 
 
-  "backSolve" should "invert correctly" in {
-    val A = DenseMatrix((4,1),(0,2)) map (_.toDouble)
-    val x = DenseVector(3.0,-2.0)
-    val y = A * x
-    val xx = backSolve(A,y)
-    assert (norm(x-xx) < 0.00001)
-  }
 
 }
 
