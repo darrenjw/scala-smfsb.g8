@@ -1,15 +1,14 @@
-A [Giter8](http://www.foundweekends.org/giter8/) template for [scala-smfsb](https://github.com/darrenjw/scala-smfsb)!
+A [Giter8](http://www.foundweekends.org/giter8/) template for [Scala Breeze](https://github.com/scalanlp/breeze)!
 
-* scala 2.12.8
-* scala-smfsb 0.5
+* Breeze 0.13, Scala 2.12.1
 
 ```bash
-sbt new darrenjw/scala-smfsb.g8
+sbt new darrenjw/breeze.g8
 ```
 
 Template license
 ----------------
-Written in 2019 by Darren Wilkinson darrenjwilkinson@btinternet.com
+Written in 2017 by Darren Wilkinson darrenjwilkinson@btinternet.com
 
 To the extent possible under law, the author(s) have dedicated all copyright and related
 and neighboring rights to this template to the public domain worldwide.
