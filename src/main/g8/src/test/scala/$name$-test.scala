@@ -1,5 +1,8 @@
 import org.scalatest.FlatSpec
 
+import smfsb._
+import breeze.linalg._
+
 class SmfsbSpec extends FlatSpec {
 
   "Step.gillespie" should "create and step LV model" in {
