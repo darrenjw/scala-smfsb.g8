@@ -1,7 +1,7 @@
 A [Giter8](http://www.foundweekends.org/giter8/) template for [scala-smfsb](https://github.com/darrenjw/scala-smfsb)!
 
 * scala 2.12.8
-* scala-smfsb 0.5
+* scala-smfsb 0.6
 
 ```bash
 sbt new darrenjw/scala-smfsb.g8
